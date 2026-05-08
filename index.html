@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saniya Anjum Siddiqui | MCA Student & Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">Saniya<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#hero" onclick="closeMobileNav()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileNav()">Skills</a></li>
+      <li><a href="#experience" onclick="closeMobileNav()">Experience</a></li>
+      <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
+      <li><a href="#education" onclick="closeMobileNav()">Education</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Saniya Anjum<br/><span class="gradient-text">Siddiqui</span></h1>
+      <div class="hero-roles">
+        <span>I'm a </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">MCA Student · Frontend Developer · Problem Solver</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/saniya-anjum-siddiqui-b77143343/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:saniyaanjum2402@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">SA</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">8.5</span>
+              <span class="stat-label">MCA GPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Internship</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a highly motivated <strong>MCA student</strong> at Pranveer Singh Institute of Technology, Kanpur, passionate about building beautiful, functional web experiences.</p>
+          <p>I have hands-on experience in <strong>frontend web development</strong> using HTML, CSS, and JavaScript, and I'm currently expanding my expertise in <strong>React</strong> and backend development technologies.</p>
+          <p>I'm a quick learner who thrives in collaborative environments and is enthusiastic about developing scalable full-stack web applications.</p>
+          <div class="about-tags">
+            <span class="tag">Frontend Dev</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Team Player</span>
+            <span class="tag">Quick Learner</span>
+          </div>
+          <a href="mailto:saniyaanjum2402@gmail.com" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fas fa-code"></i> Languages</div>
+          <div class="skill-pills">
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">Core Java</span>
+            <span class="skill-pill">JavaScript (ES6+)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fab fa-html5"></i> Web Technologies</div>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fas fa-database"></i> Databases</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Oracle</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fas fa-tools"></i> Tools & Platforms</div>
+          <div class="skill-pills">
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fas fa-brain"></i> Core Competencies</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Data Structures</span>
+            <span class="skill-pill">OOP</span>
+            <span class="skill-pill">OS</span>
+            <span class="skill-pill">Computer Networks</span>
+            <span class="skill-pill">SDLC</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fas fa-users"></i> Soft Skills</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Analytical Thinking</span>
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Communication</span>
+            <span class="skill-pill">Team Collaboration</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill bars -->
+      <div class="skill-bars">
+        <h3 class="sub-title">Proficiency</h3>
+        <div class="bar-item" data-level="85">
+          <div class="bar-label"><span>HTML & CSS</span><span class="bar-pct">85%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="bar-item" data-level="75">
+          <div class="bar-label"><span>JavaScript</span><span class="bar-pct">75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="bar-item" data-level="65">
+          <div class="bar-label"><span>React.js</span><span class="bar-pct">65%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+        </div>
+        <div class="bar-item" data-level="70">
+          <div class="bar-label"><span>SQL / MySQL</span><span class="bar-pct">70%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="bar-item" data-level="70">
+          <div class="bar-label"><span>Core Java</span><span class="bar-pct">70%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>Frontend Web Development Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Edunet Foundation &nbsp;·&nbsp; <i class="fas fa-wifi"></i> Remote</p>
+              </div>
+              <span class="tl-date">Aug 2025 – Sep 2025</span>
+            </div>
+            <ul class="tl-points">
+              <li>Developed interactive and responsive web interfaces using JavaScript and modern UI design principles.</li>
+              <li>Participated in full application development lifecycle — coding, debugging, functional testing, and documentation.</li>
+              <li>Implemented reusable modular UI components improving code maintainability and development efficiency.</li>
+              <li>Collaborated remotely with team members and applied feedback-driven improvements for better performance.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>UI Design</span><span>Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>ProNet</h3>
+          <p class="project-sub">Professional Networking Platform</p>
+          <p class="project-desc">A responsive professional networking frontend platform built with React.js and Tailwind CSS, featuring dynamic networking features and structured user workflows.</p>
+          <div class="project-tags">
+            <span>React.js</span><span>Tailwind CSS</span><span>UI Dev</span><span>Performance</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-sm btn-sm-accent"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Decision Garden</h3>
+          <p class="project-sub">Intelligent Task Prioritization Planner</p>
+          <p class="project-desc">A workflow-based task management web app with client-side JavaScript logic, Local Storage persistence, input validation, and dynamic UI updates.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-sm btn-sm-accent"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>Master of Computer Applications</h3>
+            <p class="edu-school">Pranveer Singh Institute of Technology, Kanpur</p>
+            <p class="edu-date">Sep 2024 – Present</p>
+            <div class="edu-gpa"><i class="fas fa-star"></i> GPA: 8.5</div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-info">
+            <h3>Bachelor of Science</h3>
+            <p class="edu-school">Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+            <p class="edu-date">Sep 2021 – Aug 2024</p>
+            <div class="edu-gpa"><i class="fas fa-star"></i> GPA: 7.86</div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <h3>Intermediate</h3>
+            <p class="edu-school">Escorts World School, Kanpur</p>
+            <p class="edu-date">May 2019 – Jul 2020</p>
+            <div class="edu-gpa"><i class="fas fa-star"></i> GPA: 8.75</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <h3 class="sub-title" style="margin-top:3rem;">Achievements & Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-card reveal"><i class="fab fa-java"></i><span>HackerRank Java (Basic)</span><small>Jan 2026</small></div>
+        <div class="cert-card reveal"><i class="fas fa-database"></i><span>HackerRank SQL (Basic)</span><small>Jun 2025</small></div>
+        <div class="cert-card reveal"><i class="fas fa-c"></i><span>NPTEL — Problem Solving in C</span><small>Jan–Apr 2025</small></div>
+        <div class="cert-card reveal"><i class="fas fa-table"></i><span>DBMS Part 1</span><small>Jan 2025</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="contact-desc">I'm currently open to internship opportunities, collaborations, and exciting projects. Feel free to reach out!</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:saniyaanjum2402@gmail.com">saniyaanjum2402@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:8917070270">+91 8917070270</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p>Kanpur, Uttar Pradesh, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/saniya-anjum-siddiqui-b77143343/" target="_blank">Saniya Anjum Siddiqui</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p id="form-msg" class="form-success" style="display:none;">✅ Message sent successfully!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built with <span style="color:#E11D48">♥</span> by <strong>Saniya Anjum Siddiqui</strong></p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/saniya-anjum-siddiqui-b77143343/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:saniyaanjum2402@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Saniya Anjum Siddiqui. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
